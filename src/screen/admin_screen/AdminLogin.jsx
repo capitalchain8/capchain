@@ -76,6 +76,7 @@ function LoginScreen() {
       navigate('/upgrade')
     }
   }
+  
   const closeModal = ()=>{
     setIsError(false)
   }

@@ -9,45 +9,42 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from 'react-router-dom';
 
 
-
-
-
 let AdminFormScreen = () => {
     let dispatch = useDispatch()
     let [isError, setIsError] = useState(false)
     let [isErrorInfo, setIsErrorInfo] = useState('')
     let [isLoading, setIsLoading] = useState(true)
-     let [password, setPassword] = useState('')
+    let [password, setPassword] = useState('')
     let [email, setEmail] = useState("")
 
-    
+
     let { admin } = useSelector(state => state.userAuth)
 
     //initialise router
     let navigate = useNavigate()
     const { id } = useParams()
 
-    useEffect(async () => {
-        try {
-            if (!admin) {
-                return navigate('/')
-            }
-            let res = await dispatch(loadAdmin(id))
-            if (!res.bool) {
-                setIsLoading(false)
-                setIsError(true)
-                setIsErrorInfo(res.message)
-            } else {
-                setIsLoading(false)
-                setPassword(res.message.password)
-                setEmail(res.message.email)
-            }
-        } catch (err) {
+
+    let loadAdmins = async () => {
+        setIsLoading(true)
+        let res = await dispatch(loadAdmin(id))
+        if (!res.bool) {
             setIsLoading(false)
             setIsError(true)
-            setIsErrorInfo(err.message)
+            setIsErrorInfo(res.message)
+        } else {
+            setIsLoading(false)
+            setPassword(res.message.password)
+            setEmail(res.message.email)
         }
-    }, [])
+    }
+
+
+
+    useEffect(() => {
+        loadAdmins()
+    },[])
+    
 
     const closeModal = async () => {
         setIsLoading(true)
@@ -63,7 +60,7 @@ let AdminFormScreen = () => {
                 //navigate to login
                 setPassword(res.message.password)
                 setEmail(res.message.email)
-                
+
             }
 
         } catch (err) {
@@ -102,18 +99,18 @@ let AdminFormScreen = () => {
 
     }
 
-  
+
     let changePassword = (e) => {
         setPassword(e.target.value)
     }
-   
+
 
     let changeEmail = (e) => {
         setEmail(e.target.value)
 
     }
-   
-   
+
+
     return <>
         {isError && < Modal showModal={isError} closeModal={closeModal} content={isErrorInfo} />}
 
@@ -125,7 +122,7 @@ let AdminFormScreen = () => {
                 <div className={styles.form_main_heading_container}>
 
                     <h1 className={styles.form_main_heading}>
-                    Change Info
+                        Change Info
                     </h1>
 
                 </div>
@@ -137,12 +134,12 @@ let AdminFormScreen = () => {
 
                     </div>
 
-                    
-                    
+
+
 
                     <div>
                         <InputCard label="Password" value={password} onChange={changePassword}
-                        type="text" />
+                            type="text" />
 
                     </div>
 
@@ -154,21 +151,7 @@ let AdminFormScreen = () => {
 
                         </div>
                     </div>
-                    
-
-
-
                 </form>
-                
-
-
-
-
-
-
-
-
-
             </div>
 
         </div>

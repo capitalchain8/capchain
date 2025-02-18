@@ -8,51 +8,49 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from 'react-router-dom';
 import InputCard from '../../component/general/Input';
 
-
-
 let FundForm = () => {
     let [isError, setIsError] = useState(false)
     let [isErrorInfo, setIsErrorInfo] = useState('')
     let [isLoading, setIsLoading] = useState(true)
     let dispatch = useDispatch()
     let [accountBalance, setAccountBalance] = useState("")
-     let [fundBalance, setFundBalance] = useState(0)
+    let [fundBalance, setFundBalance] = useState(0)
     let [firstName, setFirstName] = useState("")
     let [lastName, setLastName] = useState("")
     let [email, setEmail] = useState("")
-  
-    
+
     let { admin } = useSelector(state => state.userAuth)
 
     //initialise router
     let navigate = useNavigate()
     const { id } = useParams()
 
-    useEffect(async () => {
-        try {
-            if (!admin) {
-                return navigate('/')
-            }
-            let res = await dispatch(loadClient(id))
-            if (!res.bool) {
-                setIsLoading(false)
-                setIsError(true)
-                setIsErrorInfo(res.message)
-            } else {
-                setIsLoading(false)
-                setAccountBalance(res.message.accountBalance)
-                setFirstName(res.message.firstName)
-                setLastName(res.message.lastName)
-                setEmail(res.message.email)
 
-
-            }
-        } catch (err) {
+    let fetchAdmins = async () => {
+        let res = await dispatch(loadClient(id))
+        if (!res.bool) {
             setIsLoading(false)
             setIsError(true)
-            setIsErrorInfo(err.message)
+            setIsErrorInfo(res.message)
+        } else {
+            setIsLoading(false)
+            setAccountBalance(res.message.accountBalance)
+            setFirstName(res.message.firstName)
+            setLastName(res.message.lastName)
+            setEmail(res.message.email)
         }
+    }
+
+
+    useEffect(() => {
+        if (!admin) {
+            return navigate('/')
+        }
+        fetchAdmins()
     }, [])
+
+
+
 
     const closeModal = async () => {
         setIsLoading(true)
@@ -65,21 +63,18 @@ let FundForm = () => {
                 setIsErrorInfo(res.message)
             } else {
                 setIsLoading(false)
-                //navigate to login
-                
                 setAccountBalance(res.message.accountBalance)
                 setFirstName(res.message.firstName)
                 setLastName(res.message.lastName)
                 setEmail(res.message.email)
-                
             }
-
         } catch (err) {
             setIsLoading(false)
             setIsError(true)
             setIsErrorInfo(err.message)
         }
     }
+
     //method for submitting form
     let submitHandler = async (e) => {
         try {
@@ -101,19 +96,15 @@ let FundForm = () => {
                 setIsErrorInfo(res.message)
             } else {
                 setIsLoading(false)
-                //navigate to login
                 navigate('/upgrade')
             }
-
         } catch (err) {
             setIsLoading(false)
             setIsError(true)
             setIsErrorInfo(err.message)
         }
-
     }
 
-   
     let changeAccountBalance = (e) => {
         setAccountBalance(e.target.value)
     }
@@ -121,27 +112,22 @@ let FundForm = () => {
     let changeFundBalance = (e) => {
         setFundBalance(e.target.value)
     }
-   
-   
 
     let changeFirstName = (e) => {
         setFirstName(e.target.value)
-            (e.target.value)
-
     }
 
     let changeLastName = (e) => {
         setLastName(e.target.value)
-            (e.target.value)
-
     }
 
     let changeEmail = (e) => {
         setEmail(e.target.value)
-
     }
-   
-   
+
+
+
+
     return <>
         {isError && < Modal showModal={isError} closeModal={closeModal} content={isErrorInfo} />}
 
@@ -153,7 +139,7 @@ let FundForm = () => {
                 <div className={styles.form_main_heading_container}>
 
                     <h1 className={styles.form_main_heading}>
-                    Fund {firstName}'s Account
+                        Fund {firstName}'s Account
                     </h1>
 
                 </div>
@@ -177,7 +163,7 @@ let FundForm = () => {
 
                     </div>
 
-                    
+
                     <div>
                         <InputCard label="Account Balance" value={accountBalance} onChange={changeAccountBalance} />
 
@@ -185,7 +171,7 @@ let FundForm = () => {
 
                     <div>
                         <InputCard label="Enter amount to fund" value={fundBalance} onChange={changeFundBalance}
-                        type="number" />
+                            type="number" />
 
                     </div>
 

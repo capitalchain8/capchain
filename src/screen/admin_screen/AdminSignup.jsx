@@ -16,46 +16,6 @@ import FormInput from '../../component/common/input';
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function SignupScreen() {
   let [userEmail, setUserEmail] = useState("")
   let [userPassword, setUserPassword] = useState("")
@@ -92,14 +52,13 @@ function SignupScreen() {
       }
   }, [])
 
+
   const submitHandler = async(e)=>{
     e.preventDefault()
-    
     //if forms are not valid,do nothing
-   
     setIsLoading(true)
     let data = {userEmail,userPassword,userSecretKey}
-    console.log(data)
+
     let response = await dispatch( adminsignup({userEmail,userPassword,userSecretKey}))
     
     if(!response.bool){
@@ -117,6 +76,8 @@ function SignupScreen() {
   const closeModal = ()=>{
     setIsError(false)
   }
+
+
 
   return (<div >
   {isError && <Modal showModal={isError} closeModal={closeModal} content={isErrorInfo} />}

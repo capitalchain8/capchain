@@ -1,5 +1,4 @@
 import React, { useState, useCallback, useEffect } from 'react';
-
 import styles from "./updateSecretKey.module.css";
 import SubmitBtn from '../../component/common/Submit';
 import Footer from "../../component/common/Footer";
@@ -53,9 +52,7 @@ let ForgetSecretKeyScreen = () => {
             setTimeout(()=>{
                 navigate(`/forgetsecretkey`)
             },4000)
-            
         })
-
     }, [checkCodeVerification])
 
 

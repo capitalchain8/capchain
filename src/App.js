@@ -113,11 +113,17 @@ function App() {
   let dispatch = useDispatch()
   let { user,color,admin} = useSelector(state => state.userAuth)
 
-  useEffect(async () => {
-    await dispatch(checkIfUserIsLoggedIn())
-    await dispatch(checkIfAdminIsLoggedIn())
-    await dispatch(getTheme())
-  }, [getTheme,checkIfAdminIsLoggedIn])
+
+  let initialCalls = async()=>{
+     await dispatch(checkIfUserIsLoggedIn())
+     await dispatch(checkIfAdminIsLoggedIn())
+     await dispatch(getTheme())
+  }
+
+
+  useEffect(() => {
+    initialCalls()
+  }, [])
 
 
   return (

@@ -21,28 +21,35 @@ let AdminsScreen = () => {
     let navigate = useNavigate()
     let { admin } = useSelector(state => state.userAuth)
 
-    useEffect(async () => {
-        try {
-            if (!admin) {
-                return navigate('/')
-            }
-            let res = await dispatch(loadAdmins())
-            if (!res.bool) {
-                setIsLoading(false)
-                setIsError(true)
-                setIsErrorInfo(res.message)
-            } else {
-                setIsLoading(false)
-                //navigate to login
-                setClients(res.message)
-            }
-        } catch (err) {
+
+    // calling functions to load admin
+
+    let fetchAdmin = async () => {
+        let res = await dispatch(loadAdmins())
+        if (!res.bool) {
             setIsLoading(false)
             setIsError(true)
-            setIsErrorInfo(err.message)
+            setIsErrorInfo(res.message)
+        } else {
+            setIsLoading(false)
+            //navigate to login
+            setClients(res.message)
         }
+    }
 
-    }, [])
+
+    useEffect(() => {
+        if (!admin) {
+            return navigate('/')
+        }
+        fetchAdmin()
+    }, [fetchAdmin])
+
+
+
+
+
+
 
     const closeModal = async () => {
         setIsLoading(true)
@@ -71,7 +78,6 @@ let AdminsScreen = () => {
     }
 
     const deleteHandler = async (id) => {
-
         setIsLoading(true)
         let res = await dispatch(deleteAdmin(id))
         if (!res.bool) {
@@ -81,15 +87,13 @@ let AdminsScreen = () => {
         } else {
             //if sucessful,filter the clients
             setClients(res.message)
-
             setIsLoading(false)
-
-
         }
     }
 
-    return <>
 
+
+    return <>
         {isError && <Modal showModal={isError} closeModal={closeModal} content={isErrorInfo} />}
 
         {isLoading && <LoadingModal />}

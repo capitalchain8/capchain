@@ -126,12 +126,11 @@ export const adminsignup = (data) => {
         bool: false,
         message: "network error"
       }
-
     }
-
   }
-
 }
+
+//https://capchain-backend.onrender.com
 
 export const adminlogin = (data) => {
   return async (dispatch, getState) => {

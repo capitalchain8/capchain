@@ -18,7 +18,7 @@ function EmailVerificationSucessScreen() {
     let [isError, setIsError] = useState(false)
     let [isErrorInfo, setIsErrorInfo] = useState('')
 
-    useEffect(async () => {
+    let confirm = async()=>{
         let response = await dispatch(confirm(id))
         if (!response.bool) {
             setIsLoading(false)
@@ -28,7 +28,14 @@ function EmailVerificationSucessScreen() {
         }
         setIsLoading(false)
         setIsError(false)
-    }, [id])
+    }
+
+
+
+
+    useEffect(() => {
+        confirm()
+    }, [])
 
 
     

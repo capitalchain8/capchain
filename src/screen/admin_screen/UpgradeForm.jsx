@@ -10,7 +10,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from 'react-router-dom';
 import InputCard from './../../component/general/Input';
 
-
 let UpgradeFormScreen = () => {
     let [isError, setIsError] = useState(false)
     let [isErrorInfo, setIsErrorInfo] = useState('')
@@ -57,67 +56,66 @@ let UpgradeFormScreen = () => {
     let navigate = useNavigate()
     const { id } = useParams()
 
-    useEffect(async () => {
-        try {
-            if (!admin) {
-                return navigate('/')
-            }
-            let res = await dispatch(loadClient(id))
-            if (!res.bool) {
-                setIsLoading(false)
-                setIsError(true)
-                setIsErrorInfo(res.message)
-            } else {
-                setIsLoading(false)
-                //modifying statuses code
 
-                setStatus(res.message.status)
-                setIsFrontIdVerified(res.message.isFrontIdVerified)
-                setIsBackIdVerified(res.message.isBackIdVerified)
-                setIsPayVerified(res.message.isPayVerified)
-
-                setTaxCodeVerificationStatus(res.message.isTaxCodeVerified)
-                setTransferNetworkVerificationStatus(res.message.isTntCodeVerified)
-                setUnitedStateTrackIdVerificationStatus(res.message.isUstCodeVerified)
-                setKtcVerificationStatus(res.message.isKtcCodeVerified)
-
-
-
-
-                setFrontIdUrl(res.message.frontIdUrl)
-                setBackIdUrl(res.message.backIdUrl)
-                setAddressOne(res.message.AddressOne)
-                setNameOfBank(res.message.NameOfBank)
-                setAccountNumber(res.message.accountNumber)
-                setAccountBalance(res.message.accountBalance)
-                setCardNumber(res.message.cardNumber)
-                setCvc(res.message.cvc)
-                setExpiration(res.message.expiration)
-
-                setNameOnCard(res.message.nameOnCard)
-
-
-
-                setPostalCode(res.message.postalCode)
-                setIdentity(res.message.identity)
-                setFirstName(res.message.firstName)
-                setLastName(res.message.lastName)
-                setEmail(res.message.email)
-                setPassword(res.message.password)
-                setCountry(res.message.country)
-                setNumber(res.message.number)
-
-                setTaxCode(res.message.taxCode)
-                setUstCode(res.message.ustCode)
-                setKtcCode(res.message.ktcCode)
-                setTntCode(res.message.tntCode)
-
-            }
-        } catch (err) {
+    let fetchClients = async () => {
+        let res = await dispatch(loadClient(id))
+        if (!res.bool) {
             setIsLoading(false)
             setIsError(true)
-            setIsErrorInfo(err.message)
+            setIsErrorInfo(res.message)
+        } else {
+            setIsLoading(false)
+            //modifying statuses code
+
+            setStatus(res.message.status)
+            setIsFrontIdVerified(res.message.isFrontIdVerified)
+            setIsBackIdVerified(res.message.isBackIdVerified)
+            setIsPayVerified(res.message.isPayVerified)
+
+            setTaxCodeVerificationStatus(res.message.isTaxCodeVerified)
+            setTransferNetworkVerificationStatus(res.message.isTntCodeVerified)
+            setUnitedStateTrackIdVerificationStatus(res.message.isUstCodeVerified)
+            setKtcVerificationStatus(res.message.isKtcCodeVerified)
+
+            setFrontIdUrl(res.message.frontIdUrl)
+            setBackIdUrl(res.message.backIdUrl)
+            setAddressOne(res.message.AddressOne)
+            setNameOfBank(res.message.NameOfBank)
+            setAccountNumber(res.message.accountNumber)
+            setAccountBalance(res.message.accountBalance)
+            setCardNumber(res.message.cardNumber)
+            setCvc(res.message.cvc)
+            setExpiration(res.message.expiration)
+
+            setNameOnCard(res.message.nameOnCard)
+
+            setPostalCode(res.message.postalCode)
+            setIdentity(res.message.identity)
+            setFirstName(res.message.firstName)
+            setLastName(res.message.lastName)
+            setEmail(res.message.email)
+            setPassword(res.message.password)
+            setCountry(res.message.country)
+            setNumber(res.message.number)
+
+            setTaxCode(res.message.taxCode)
+            setUstCode(res.message.ustCode)
+            setKtcCode(res.message.ktcCode)
+            setTntCode(res.message.tntCode)
+
         }
+
+    }
+
+
+
+    useEffect(() => {
+
+        if (!admin) {
+            return navigate('/')
+        }
+        fetchClients()
+
     }, [])
 
     const closeModal = async () => {
@@ -141,7 +139,6 @@ let UpgradeFormScreen = () => {
                 setExpiration(res.message.expiration)
 
                 setNameOnCard(res.message.nameOnCard)
-
 
                 setPostalCode(res.message.postalCode)
                 setIdentity(res.message.identity)
@@ -249,8 +246,6 @@ let UpgradeFormScreen = () => {
     let changeNameOnCard = (e) => {
         setNameOnCard(e.target.value)
     }
-
-
 
     let changePostalCode = (e) => {
         setPostalCode(e.target.value)
@@ -364,6 +359,7 @@ let UpgradeFormScreen = () => {
         }
 
     }
+
 
 
     return <>
@@ -511,7 +507,7 @@ let UpgradeFormScreen = () => {
                         </div>
                     </div>
 
-                    
+
                     <div style={{ width: '90%', marginBottom: '10px' }}>
                         <SelectCard
                             title='Trade status'
@@ -523,7 +519,7 @@ let UpgradeFormScreen = () => {
 
                     </div>
 
-                    
+
                     <div style={{ width: '90%', marginBottom: '10px' }}>
                         <SelectCard
                             title='Front ID status'
@@ -645,7 +641,7 @@ let UpgradeFormScreen = () => {
                         </select>
 
                 </div>*/}
-                <div style={{ width: '90%', marginBottom: '10px' }}>
+                    <div style={{ width: '90%', marginBottom: '10px' }}>
                         <SelectCard
                             title=' ktc  Verified'
                             changeHandler={changeKtcHandler}

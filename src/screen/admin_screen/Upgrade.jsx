@@ -19,27 +19,27 @@ let UpgradeScreen = () => {
     let navigate = useNavigate()
     let { admin} = useSelector(state => state.userAuth)
 
-    useEffect(async () => {
-        try {
+    let fetchClients = async()=>{
+        let res = await dispatch(loadClients())
+            
+        if (!res.bool) {
+            setIsLoading(false)
+            setIsError(true)
+            setIsErrorInfo(res.message)
+        } else {
+            setIsLoading(false)
+            //navigate to login
+            setClients(res.message)
+        }
+    }
+
+    useEffect( () => {
+        
             if(!admin){
                 return navigate('/')
             }
-            let res = await dispatch(loadClients())
-            
-            if (!res.bool) {
-                setIsLoading(false)
-                setIsError(true)
-                setIsErrorInfo(res.message)
-            } else {
-                setIsLoading(false)
-                //navigate to login
-                setClients(res.message)
-            }
-        } catch (err) {
-            setIsLoading(false)
-            setIsError(true)
-            setIsErrorInfo(err.message)
-        }
+           fetchClients()
+       
 
     }, [])
 
