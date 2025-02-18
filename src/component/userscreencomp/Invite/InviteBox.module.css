@@ -1,0 +1,103 @@
+.invitebox{
+    width: 100%;
+    overflow-y: scroll;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.invitebox h1{
+    font-size:2rem;
+    margin-bottom: 20px;
+}
+
+
+.invitebox p{
+    font-size:1.2rem;
+    margin-bottom: 30px;
+}
+
+.invitebox .emailinput,.inputContainer{
+    font-size:1.3rem;
+    width: 100%;
+    height:55px;
+    border: 1px solid var(--fadeText);
+    border-radius: 5px;
+    padding:10px;
+    margin-bottom: 30px;
+
+}
+
+.invitebox .invitebutton{
+    width:150px;
+    padding-top:15px;
+    padding-bottom:15px;
+    background-color:var(--color-blue);
+    color:var(--color-background);
+    border-radius:30px;
+    font-size: 1rem;
+    font-family:Poppins;
+    margin-bottom: 30px;
+}
+
+.invitebox .shareContainer{
+    display:flex;
+}
+
+.invitebox  .shareContainer .inputContainer{
+    width:70%;
+    display:flex;
+
+}
+.invitebox  .shareContainer .inputContainer input{
+    width:60%;
+    font-size: 1.3rem;
+    margin-right: 5px;
+}
+
+.invitebox  .shareContainer .inputContainer p{
+    color:var(--color-blue);
+    margin-top:5px;
+    font-size:1rem
+
+}
+
+
+.invitebox  .shareContainer  button{
+    width:29%;
+    height:55px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color:var(--color-background);
+    background-color: var(--color-blue);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-left:5px
+
+}
+
+.invitebox  .shareContainer  button span{
+    margin-right:10px
+}
+
+
+@media screen and (max-width: 750px) {
+    .invitebox h1{
+        font-size:1.5rem;
+    }
+    .invitebox p{
+        font-size:1rem;
+    }
+
+
+    .invitebox{
+        padding:0px;
+        padding-top: 20px;
+
+    }
+    
+    
+    
+
+}

@@ -1,0 +1,39 @@
+.progressivebox{
+    width: 100%;
+    overflow-y: scroll;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-fader);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.progressivebox .progressContainer{
+    width:100%;
+    height:40px;
+    border-radius:5px;
+    background-color: var(--color-fade);
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.progressivebox .progressContainer p{
+    font-size:1rem;
+    padding:5px;
+}
+
+.progressivebox .innerprogress{
+    height:100%;
+    width:50%;
+    background-color: rgb(112, 97, 97);
+    border-radius: 2px;
+     background-color: #023047;
+}
+
+.progressivebox .headingText{
+    margin-bottom: 20px;
+    font-size:1.3rem;
+    color:var(--fadeText);
+    font-weight: 300;
+}

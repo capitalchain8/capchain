@@ -1,0 +1,132 @@
+/* styling the screen container */
+.screenContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.screenContainer .innerContainer {
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+.screenContainer .headText {
+    font-size: 2.8rem;
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.screenContainer .paragraphText {
+    font-size: 1.1rem;
+    text-align: left;
+    font-weight: 550;
+    color:var(--fadeText);
+    margin-bottom: 20px;
+}
+
+
+
+.screenContainer form {
+    margin-bottom: 30px;
+}
+.screenContainer form .inputContainer{
+    display:grid;
+    grid-template-columns: 30% 65%;
+    gap:5%;
+    margin-bottom: 20px;
+}
+.screenContainer form .inputContainer div{
+    height:100%;
+}
+.screenContainer form .inputContainer div label{
+    color:var(--headColor);
+    font-size:1rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.screenContainer form select,.screenContainer form input{
+    width:100%;
+    height:55px;
+    border-radius:5px;
+    font-size: 1.2rem;
+    font-weight:600;
+    border:1px solid rgb(150,150,150);
+    padding-left: 10px;
+    font-family:Poppins;
+    color:var(--fadeText)
+}
+
+.screenContainer form .phoneerror{
+    color:var(--color-red);
+    font-size:1rem;
+    padding-top:10px;
+    
+}
+
+.screenContainer form select:focus{
+    border:2px solid var(--color-blue);
+}
+
+.screenContainer   .securityContainer{
+    display:flex;
+    background-color: rgb(245,245,245);
+    padding:20px
+}
+.screenContainer   .securityContainer .imgContainer{
+    width:20%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.screenContainer   .securityContainer .textContainer{
+    width:80%;
+    font-size: 1rem;
+
+}
+
+
+.screenContainer   .securityContainer img{
+    width:50%
+}
+.screenContainer .signout {
+    color: var(--color-blue);
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width:750px){
+    /* styling the screen container */
+.screenContainer {
+    padding-top: 0px;
+}
+
+.screenContainer .innerContainer {
+    width: 100%;
+}
+
+    .screenContainer .headText {
+        font-size: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width: 520px) {
+    .screenContainer .innerContainer {
+        width: 100%;
+        padding: 10px;
+        border: none;
+
+    }
+
+   
+
+}

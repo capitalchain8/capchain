@@ -1,0 +1,76 @@
+/* styling the watchlist*/
+.watchListContainer {
+    width: 100%;
+}
+
+
+.watchListContainer .watchListHead {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+.watchListContainer .watchListHead h1 {
+    font-weight: 400;
+    font-size: 1.5rem
+}
+
+.watchListContainer .watchListHead .select {
+    font-weight: 400;
+    width: 140px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: var(--color-fade);
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-self: space-around;
+}
+.watchListContainer .watchListHead .select select {
+    background-color: var(--color-fade);
+    font-size: 1.3rem;
+}
+
+.watchList {
+    padding-bottom: 30px;
+}
+
+.watchList ul {
+    display: flex;
+    width: 100%;
+}
+
+.watchList ul li {
+    flex: 1;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-black)
+}
+
+
+@media screen and (max-width: 750px) {
+    .watchListContainer {
+        margin-top: 230px;
+    }
+
+
+}
+
+
+
+/*
+ {
+        logo: "question",
+        title: "capchain Learn",
+        action: "Explainers",
+        topic: "What is Dogecoin",
+        about: "DOGE was created as a lighthearted alternative to traditional cryptocurrencies,but it's become...",
+        likeNo: "17.5",
+        url: require('../assets/icons/home3.jpg'),
+        browserUrl:'https://www.capchains.cloud/learn/crypto-basics/what-is-dogecoin'
+    }
+
+
+*/

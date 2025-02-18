@@ -1,0 +1,23 @@
+/*styling the top movers section*/
+ .topMovers {
+    padding: 25px;
+    width:400px
+}
+
+ .topMovers .headContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 14px
+}
+
+ .topMovers .headContainer p {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+ .topMovers .headContainer p:nth-of-type(2) {
+    font-size: 1.1rem;
+    color: var(--color-blue)
+}
+

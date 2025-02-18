@@ -1,0 +1,142 @@
+.calculatorContainer {
+    width: 95%;
+    overflow-y: scroll;
+    padding: 30px 10px 20px 10px;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-fader);
+    border-radius: 5px;
+}
+
+
+.calculatorContainer .amountBalance {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.calculatorContainer .amountBalance p {
+    font-size: 1.5rem;
+    color: var(--fadeText)
+}
+
+.calculatorContainer .conversionContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.calculatorContainer .conversionContainer .leftButton,
+.calculatorContainer .conversionContainer .rightButton {
+    width: 20%;
+    display: flex;
+    font-size: 1.5rem;
+
+}
+
+.calculatorContainer .conversionContainer .leftButton {
+    justify-content: flex-start;
+}
+
+.calculatorContainer .conversionContainer .rightButton {
+    justify-content: flex-end;
+}
+
+.calculatorContainer .conversionContainer .leftButton span,
+.calculatorContainer .conversionContainer .rightButton span {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+
+    background-color: var(--color-fade);
+
+
+}
+
+.calculatorContainer .conversionContainer .leftButton span,
+.calculatorContainer .conversionContainer .rightButton span,
+.calculatorContainer .cryptoCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.calculatorContainer .cryptoCard {
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.09);
+    margin-bottom: 0px;
+    padding: 20px
+}
+
+.calculatorContainer .cryptoCard .imgCon,
+.calculatorContainer .cryptoCard .conversionCon {
+    width: 50%;
+    display: flex
+}
+
+.calculatorContainer .cryptoCard .imgCon {
+    display: flex;
+    align-items: center;
+
+}
+
+.calculatorContainer .cryptoCard .imgCon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-right: 10px
+}
+
+
+
+.calculatorContainer .cryptoCard .conversionCon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.calculatorContainer .cryptoCard .conversionCon p,
+.calculatorContainer .cryptoCard .imgCon p {
+    font-size: 1.5rem
+}
+
+.calculatorbuttonCon {
+    display: none
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .calculatorContainer {
+        padding: 30px 10px 100px 10px;
+    }
+
+
+    .calculatorContainer {
+        width: 100%;
+        border-radius: 0px;
+
+    }
+    .calculatorbuttonCon {
+        display: block;
+        width:100%
+    }
+    .calculatorContainer .cryptoCard {
+        margin-bottom: 60px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    /* styling the pay section*/
+   
+
+    
+}

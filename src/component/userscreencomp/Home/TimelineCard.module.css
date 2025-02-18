@@ -1,0 +1,248 @@
+/* Timeline card*/
+.timelineCards {
+    margin-bottom: 10px;
+    display:flex;
+    align-items:flex-start
+}
+
+.timelineCardleft {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--color-fade);
+    margin-bottom: 20px;
+}
+
+
+.timelineCardleft .timelineImg {
+
+
+}
+
+.timelineCardleft .timelineImg .heading {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.timelineCardleft .timelineImg .heading .headingTextCon {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.timelineCardleft .timelineImg .heading .headingTextCon span {
+    padding: 3px;
+    background-color: var(--color-blue);
+    border-radius: 100%;
+    font-size: 1.4rem;
+    color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+
+}
+
+.timelineCardleft .timelineImg .heading .headingTextCon .headingText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.timelineCardleft .timelineImg .heading .headingTextCon .headingText p:nth-of-type(1) {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.timelineCardleft .timelineImg .heading .headingTextCon .headingText p:nth-of-type(2) {
+    font-size: 1.2rem;
+    color: var(--fadeText)
+}
+
+
+.timelineCardleft .timelineImg .heading .headingIcon {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    align-items: center;
+}
+
+.timelineCardleft img {
+    width: 100%;
+    height: auto
+}
+
+.timelineCardleft .timelineAbout{
+    display:none
+}
+
+.timelineCardleft .timelineAbout .heading {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    display: none
+}
+
+.timelineCardleft .timelineAbout .heading .headingTextCon {
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.heading .headingTextCon span {
+    padding: 2.8px;
+    background-color: var(--color-blue);
+    border-radius: 100%;
+    font-size: 1.4rem;
+    color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+
+}
+
+.timelineCardleft .timelineAbout .heading .headingTextCon .headingText {
+    display: flex;
+    align-items: center;
+}
+
+.timelineCardleft .timelineAbout .heading .headingTextCon .headingText p:nth-of-type(1) {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: 10px;
+
+}
+
+.timelineCardleft .timelineAbout .heading .headingTextCon .headingText p:nth-of-type(2) {
+    font-size: 1.2rem;
+    color: var(--fadeText)
+}
+
+.timelineCardleft .timelineAbout .heading .headingIcon {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    align-items: center;
+}
+
+.timelineAbout .aboutHead {
+    color: black
+}
+
+.timelineAbout .aboutText {
+    color: var(--fadeText);
+    font-size: 1.2rem;
+}
+
+.timelineAbout .aboutIconContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+ .timelineAbout .aboutIconContainer span:nth-of-type(1) {
+    margin-right: 20px;
+}
+
+.timelineAbout .aboutIconContainer p {
+    font-size: 1.3rem;
+    margin-right: 20px;
+}
+
+.timelineCardright{
+    width:50%;
+    padding:10px
+
+}
+.timelineCardright .heading{
+    display:flex;
+    width:100%;
+    margin-bottom: 30px;
+    
+}
+
+.timelineCardright .heading .headingTextCon{
+    display:flex;
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.timelineCardright .heading .headingText{
+    display:flex;
+    align-items: center;
+    
+}
+
+.timelineCardright .heading .headingText p{
+    font-size:1.3rem;
+    margin-right:5px;
+    
+} 
+.timelineCardright .heading .headingText p:nth-of-type(2){
+    font-size:1.1rem
+    
+} 
+.timelineCardright .heading .headingIcon{
+    display:flex;
+    width: 20%;
+    justify-content: flex-end;
+    
+}
+
+
+
+.timelineCardright .heading .headingTextCon span{
+    display:flex;
+    
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+
+    /* Timeline card*/
+    .timelineCardleft .timelineImg .heading {
+        display: flex;
+    }
+
+    .timelineCardleft img {
+        margin-bottom: 13px;
+    }
+    
+    .timelineCardleft .timelineAbout{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .timelineCardlefts {
+        display: flex;
+    }
+
+
+    .timelineCardleft {
+        width: 100%;
+    }
+  
+
+
+    .timelineCardright{
+        display:none
+    }
+
+
+}

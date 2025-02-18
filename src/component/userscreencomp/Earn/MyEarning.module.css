@@ -1,0 +1,52 @@
+.myearning{
+    width: 100%;
+    overflow-y: scroll;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-fader);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.heading,.about{
+    padding:10px;
+}
+
+ .heading{
+    border-bottom: 1px solid var(--color-fader);
+
+}
+h2{
+    font-size:1.5rem
+}
+
+.about{
+    display:flex;
+    justify-content: space-between;
+}
+.about .imageCon{
+    width:18%;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 2%;
+}
+.about .imageCon img{
+    width:90%
+}
+.about .contentCon{
+    width:80%;
+}
+.about .contentCon h2{
+    font-size:1.4rem
+    
+}
+ p{
+    font-size: 1rem;
+    color:var(--fadeText);
+     font-size:1rem  
+}
+
+
+
+
+
+

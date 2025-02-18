@@ -1,0 +1,47 @@
+/* styling the asset section */
+.assets {
+    border-radius: 10px;
+    border: 1px solid var(--color-fader);
+    background-color: var(--color-background)
+}
+
+.assets .headingCon {
+    border-bottom: 1px solid var(--color-fader);
+    padding: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+.assets .cryptoAssetCon {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.assets .cryptoAssetCon img {
+    width: 50%
+}
+
+.assets .cryptoAssetCon h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+
+}
+
+.assets .cryptoAssetCon p {
+    font-size: 1.2rem;
+    color: var(--color-fadeText);
+    margin-bottom: 15px;
+}
+.assets .cryptoAssetCon button {
+    height: 55px;
+    width: 50%;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 900;
+    font-family: Poppins;
+}

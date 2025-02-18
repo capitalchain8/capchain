@@ -1,0 +1,165 @@
+ .bodylistCon {
+     padding-top: 10px;
+     padding-bottom: 10px;
+     border-bottom: 1px solid var(--color-fader);
+     padding-left: 10px;
+     padding-right: 10px;
+     background-color: var(--color-background);
+     width: 100%;
+     display: flex;
+ }
+
+ .bodylistCon .cryptoName,
+ .bodylistCon .listPrice .price,
+ .address {
+     font-size: 1.5rem;
+     font-weight: 500;
+     color: var(--color-black)
+ }
+
+ .bodylistCon li p {
+     font-size: 1.4rem;
+     color: var(--fadeText)
+ }
+
+ .bodylistCon li:nth-of-type(6) {
+     flex: .5;
+     text-align: center;
+ }
+
+ .bodylistCon:hover {
+     background-color: var(--color-fade);
+     transition: 1s ease;
+ }
+
+ .bodylistCon .listName {
+     display: flex;
+     margin-right: 5px;
+     flex: .8;
+ }
+
+ .bodylistCon .listPrice p:nth-of-type(2) {
+     display: none;
+ }
+
+ .bodylistCon .listName .cryptoImg {
+     margin-right: 10px;
+     width: 20%;
+     ;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     margin-left: 0px;
+ }
+
+ .bodylistCon .listName .cryptoImg img {
+     width: 28px;
+
+ }
+
+ .bodylistCon .listName .crypto {
+     width: 90%;
+ }
+
+ .bodylistCon .listBuy button {
+     width: 80%;
+     border-radius: 30px;
+     height: 40px;
+     background-color: var(--color-blue);
+     font-family: Poppins;
+     color: var(--color-background);
+     font-size: 1.2rem;
+ }
+
+ .bodylistCon .listWatch span {
+     font-size: 2.5rem;
+     color: var(--color-fader)
+ }
+ 
+
+ .bodylistCon ul .listName .cryptoName {
+     font-weight: 700;
+ }
+
+ .bodylistCon .listName .cryptoSymbol {}
+
+ .bodylistCon .address {
+     display: flex;
+ }
+
+
+
+ .bodylistCon .address .cryptoNameCon,.bodylistCon .address .iconNameCon  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+ }
+
+ .bodylistCon .address .cryptoNameCon {
+     width: 80%;
+
+ }
+
+ .bodylistCon .address .iconNameCon {
+     width: 20%;
+ }
+
+
+ .bodylistCon .address .iconNameCon span{
+    color:green
+ }
+
+ @media screen and (max-width: 750px) {
+
+     .bodylistCon li {
+         font-size: 2rem;
+         flex: 1
+     }
+
+     .bodylistCon li:nth-of-type(1) {
+         flex: 1;
+     }
+
+     .bodylistCon li:nth-of-type(2) {
+         flex: 1;
+         text-align: right;
+     }
+
+     .bodylistCon li:nth-of-type(6) {
+         flex: 1;
+         text-align: right;
+     }
+
+     .bodylistCon .listName .cryptoImg {
+         margin-right: 0px;
+     }
+
+     .bodylistCon .listName .cryptoImg img {
+         margin-right: 0px;
+     }
+
+
+
+
+     .listMarket,
+     .listBuy,
+     .listChange,
+     .listWatch {
+         display: none;
+
+     }
+
+
+     .bodylistCon .listPrice p:nth-of-type(2) {
+         display: block;
+     }
+
+     .bodylistCon .address .cryptoNameCon,.bodylistCon .address .iconNameCon  {
+        align-items: flex-end;
+     }
+    
+
+
+
+ }

@@ -1,0 +1,14 @@
+.conversionBlock{
+    width:60%;
+    text-align: center;
+
+}
+.conversionBlock p{
+    font-family: Poppins;
+    color:var(--color-blue);
+    font-weight: 300;
+
+}
+
+
+

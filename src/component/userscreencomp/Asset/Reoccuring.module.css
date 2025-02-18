@@ -1,0 +1,65 @@
+ .reoccuringBuyCon{
+    background-color: var(--color-background);
+    border-radius: 10px;
+    border: 1px solid var(--color-fader);
+    
+}
+
+ .reoccuringBuyCon .heading{
+    display:flex;
+    border-bottom: 1px solid var(--color-fade);
+    padding: 20px;
+
+}
+
+ .reoccuringBuyCon .heading .headingLeft{
+    display:flex;
+    align-items: center;
+    width:60%;
+    justify-content: flex-start;
+}
+
+ .reoccuringBuyCon .heading .headingLeft h1{
+    font-size:1.5rem
+}
+
+ .reoccuringBuyCon .heading .headingRight{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    width:40%;
+    
+}
+ .reoccuringBuyCon .heading .headingRight p{
+    font-size: 1rem;
+    color:var(--color-blue)
+    
+}
+
+ .reoccuringBuyCon .learnContainer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+ .reoccuringBuyCon .learnContainer .textContainer{
+    width:70%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+ .reoccuringBuyCon .learnContainer .imgContainer, .reoccuringBuyCon .learnContainer .iconContainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:18%;
+    height:100%;
+    color:var(--color-blue);
+}
+
+ .reoccuringBuyCon .learnContainer .imgContainer img{
+    width:80%;
+}

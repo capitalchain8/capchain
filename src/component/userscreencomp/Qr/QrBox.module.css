@@ -1,0 +1,105 @@
+.QrBox {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding:20px 20px 100px 20px;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-fader);
+    border-radius: 5px;
+}
+
+
+.QrBox .selectorContainer{
+    margin-bottom:40px;
+    padding:15px 0px 15px 0px
+} 
+.QrBox .selectorContainer .selectorOption{
+    display:flex;
+    align-items: center;
+} 
+.QrBox .selectorContainer .selectorOption span{
+    font-size:2.3rem
+} 
+.QrBox .selectorContainer p{
+    font-size: 1.1rem;
+    color:var(--fadeText)
+} 
+
+.QrBox .QrContainer{
+    height:280px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 20px;
+} 
+
+.QrBox .Qr{
+    height:230px;
+    width:70%;
+}
+.QrBox .QrAddressContainer .QrAddress{
+    display:flex;
+    width:100%;
+    align-items: center;
+    margin-bottom: 50px;
+} 
+.QrBox .QrAddressContainer .QrAddress .address{
+    width:70%
+}
+
+.QrBox .QrAddressContainer .QrAddress .address p{
+    font-size: 1.3rem;
+}
+.QrBox .QrAddressContainer .QrAddress .address h2{
+    font-size: 1.6rem;
+    color:var(--fadeText)
+}
+
+.QrBox .QrAddressContainer .QrAddress button{
+    width:30%;
+    padding:15px 0px 15px 0px;
+    font-family: Poppins;
+    font-size:1rem;
+    background-color: var(--color-blue);
+    color:var(--color-background);
+    border-radius: 30px;
+}
+
+.QrBox .warningContainer{
+    width:100%;
+    text-align: justify;
+    background-color: var(--color-fade);
+    display:flex;
+    align-items: flex-start;
+    padding:10px 0px 10px 0px
+}
+
+.QrBox .warningContainer span{
+    margin-right: 5px;
+    padding:1px;
+    border-radius:100%;
+    background-color: var(--fadeText);
+    color:var(--color-background)
+}
+
+.QrBox .warningContainer p{
+    font-size: 1.1rem;
+    color:var(--fadeText)
+}
+
+
+@media screen and (max-width: 900px) {
+    .QrBox {
+        width: 100%;
+        border-radius: 0px;
+
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    /* styling the pay section*/
+    
+
+}

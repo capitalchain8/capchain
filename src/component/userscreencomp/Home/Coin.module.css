@@ -1,0 +1,74 @@
+.coinCard {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.coinCard:hover {
+    background-color: var(--color-fade);
+    transition: 2s ease;
+
+}
+
+.coinCard .symbolCon {
+    display: flex;
+    width: 40%;
+}
+
+.coinCard .nameCon {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.coinCard .nameCon .name {
+    font-size: 1.2rem;
+    font-weight: 600
+}
+
+.coinCard .nameCon .symbol {
+    font-size: 1.2rem;
+}
+
+
+.coinCard .symbolCon .imageCon {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 3px;
+}
+
+.coinCard .symbolCon .imageCon img {
+    width: 80%;
+    
+}
+
+.coinCard .priceCon {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+
+}
+
+.coinCard .priceCon .currentPrice {
+    font-size: 1.4rem;
+
+}
+
+.coinCard .priceCon .percentageChange {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+

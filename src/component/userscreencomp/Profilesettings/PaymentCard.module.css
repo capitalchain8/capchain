@@ -1,0 +1,25 @@
+.paymentCard{
+    width: 100%;
+    overflow-y: scroll;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-fader);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding:10px
+}
+
+.paymentCard h1{
+     font-size: 1.5rem;
+     margin-bottom: 30px;
+}
+
+.paymentCard button{
+    width:90%;
+    padding-top:15px;
+    padding-bottom: 15px;
+    border-radius: 30px;
+    background-color: var(--color-fade);
+    font-size: 1.2rem;
+    font-family: Poppins;
+}
+

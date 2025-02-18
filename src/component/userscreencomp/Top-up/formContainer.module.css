@@ -1,0 +1,136 @@
+.formContainer,
+.walletFormContainer {
+    width: 100%;
+    overflow-y: scroll;
+    padding: 30px 10px 20px 10px;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-fader);
+    border-radius: 5px;
+    display: flex;
+    height: 100%;
+}
+
+.formHead {
+    width: 40%;
+    margin-right: 30px;
+
+}
+
+.formTail {
+    width: 35%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.form label {
+    font-size: 1.5rem;
+    font-family: Poppins;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    color: var(--fadeText);
+    font-weight: 600;
+}
+
+.form input {
+    width: 100%;
+    height: 60px;
+    background-color: var(--color-fade);
+    border: 1px solid var(--color-fader);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-family: Poppins;
+}
+
+
+.buttonCon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.buttonCon button {
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    background-color: var(--color-blue);
+    color: var(--color-background)
+}
+
+.walletFormContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.walletFormContainer .formHead {
+    width: 40%;
+    margin-right: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+    .walletFormContainer .formHead {
+        width: 40%;
+        margin-right: 0px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .formContainer,
+    .walletFormContainer {
+        padding: 30px 10px 100px 10px;
+    }
+    .walletFormContainer .formHead {
+        width: 50%;
+        margin-right: 0px;
+    }
+
+   
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .formContainer,
+    .walletFormContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formHead {
+        width: 100%
+    }
+
+    .formTail {
+        width: 100%;
+
+    }
+
+    .walletFormContainer {
+        padding-top: 20px;
+        align-items: center;
+    }
+
+    .walletFormContainer .formHead {
+        width: 90%;
+        height: 100%;
+    }
+
+
+
+
+
+}

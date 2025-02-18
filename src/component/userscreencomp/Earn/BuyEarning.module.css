@@ -1,0 +1,85 @@
+.buyearning{
+    width: 100%;
+    overflow-y: scroll;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-fader);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+ .heading, .about{
+    padding:10px;
+    padding-bottom: 20px;
+}
+
+ .heading{
+    border-bottom: 1px solid var(--color-fader);
+
+}
+ h2{
+    font-size:1.5rem
+}
+
+
+  p{
+    font-size: 1rem;
+    color:var(--fadeText);
+     font-size:1rem  
+}
+ .coinCon{
+    display: flex;
+    padding-top:25px;
+    padding-bottom: 25px;
+    justify-content: space-between;
+}
+ .coinCon .coinContent{
+    display: flex;
+    width:70%;
+}
+ .coinCon .coinContent .imgContainer{
+    width:20%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+ .coinCon .coinContent .imgContainer img{
+    width:30px;
+}
+ .coinCon .coinContent .coinSymbols{
+    width:80%
+}
+ .coinCon .coinContent .coinSymbols p{
+    font-size:1.2rem;
+}
+
+ .coinCon .coinContent .coinSymbols p:nth-of-type(2){
+    color:green;
+    font-size:1.1rem;
+    font-weight:500;
+}
+
+ .coinCon .action{
+    display: flex;
+    width:40%;
+    align-items:center;
+    justify-content: center;
+}
+
+ .coinCon .action button{
+    padding-top:12px;
+    padding-bottom: 12px;
+    width:120px;
+    border-radius: 30px;
+    font-size:1rem;
+    font-family: Poppins;
+}
+
+
+
+
+

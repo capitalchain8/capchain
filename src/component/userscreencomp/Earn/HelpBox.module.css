@@ -1,0 +1,56 @@
+.helpbox{
+    width: 100%;
+    overflow-y: scroll;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-fader);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.heading,.about{
+    padding:10px;
+}
+
+ .heading{
+    border-bottom: 1px solid var(--color-fader);
+
+}
+h2{
+    font-size:1.5rem
+}
+
+.about{
+    display:flex;
+    align-items: flex-start;
+}
+.about .imageCon{
+    width:20%;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.about .imageCon img{
+    width:30px
+}
+.about .contentCon{
+    width:70%;
+}
+.about .contentCon h2{
+    font-size:1.2rem;
+
+    
+}
+.about .contentCon span{
+    font-size:1.2rem;
+    color:var(--fadeText)
+}
+ p{
+    font-size: 1rem;
+    color:var(--fadeText);
+     font-size:1rem  
+}
+
+
+
+

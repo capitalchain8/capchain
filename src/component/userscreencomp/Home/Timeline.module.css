@@ -1,0 +1,91 @@
+/* timeline section*/
+.timelineCon {
+  padding: 3px;
+  padding-bottom: 30px;
+  padding-top: 30px
+}
+
+.loaderCon{
+  display:flex;
+  height:250px
+}
+
+
+.loaderCon .imgLoader{
+  width:50%;
+
+} 
+
+
+.loaderCon .img{
+  width:100%;
+  height:100%;
+} 
+
+
+.loaderCon .imgLoader .imgTop,.loaderCon .imgLoader .imgBottom{
+  display:none
+
+} 
+
+
+.loaderCon .idLoader{
+  width:50%;
+  padding:10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+
+/* styling timeline loader */
+@media screen and (max-width: 900px) {
+
+  /* timeline section*/
+  .timelineCon {
+    padding: 0px;
+    padding-bottom: 30px;
+    padding-top: 30px
+  }
+}
+
+
+@media screen and (max-width: 750px){
+  .loaderCon{
+    flex-direction: column;
+    height:300px;
+  }
+  
+  .loaderCon .imgLoader{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height:100%;
+  } 
+
+
+  .loaderCon .imgLoader .img{
+    margin-bottom:10px;
+  } 
+  
+
+  .loaderCon .imgLoader .imgTop,.loaderCon .imgLoader .imgBottom{
+    display:block
+
+  } 
+  .loaderCon .imgLoader .imgTop{
+    margin-bottom: 20px;
+  }
+  .imgLoader .imgBottom{
+    width:70%
+
+  }
+  
+  .loaderCon .idLoader{
+    display:none
+  }
+  
+}

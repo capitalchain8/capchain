@@ -1,0 +1,136 @@
+.coinChartCon {
+    width: 100%;
+    background-color: var(--color-background);
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom:40px;
+    border: 1px solid var(--color-fader);
+    
+}
+
+.coinChartCon .priceContainer {
+    justify-content: space-between;
+}
+
+.coinChartCon .price,.coinChartCon .watchListCon,.coinChartCon .priceContainer,.coinChartCon .filterComponent {
+    display:flex;
+
+}
+
+.coinChartCon .price,.coinChartCon .watchListCon {
+    width:50%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.coinChartCon .watchListCon{
+    justify-content: flex-end;
+}
+
+
+.coinChartCon .watchListCon span{
+    padding:15px;
+    border-radius: 100%;
+    background-color: var(--color-fade);
+}
+
+.coinChartCon .watchListCon span:nth-of-type(1){
+    margin-right: 10px;
+}
+
+.coinChartCon .price h1{
+    font-size:2rem
+}
+
+
+.coinChartCon .trendingPrice h1{
+    color:green
+
+}
+
+.coinChartCon .filterComponent{
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-fader);
+}
+.coinChartCon .buttonCon{
+    width:100%;
+    height:70px;
+    background-color: transparent;
+    position: static;
+    
+}
+
+.coinChartCon button{
+    width:100%;
+    height:60px;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    font-family: Poppins;
+    border:none;
+    background-color: var(--color-blue);
+    color:var(--color-background);
+}
+
+
+.coinChartCon .filterComponent  p{
+    font-size: 1.2rem;
+    width:60px;
+    height:60px;
+    border-radius: 60px;
+    
+}
+.coinChartCon .filterComponent  p,.coinChartCon button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/*
+.coinChartCon .filterComponent  p:nth-of-type(1){
+    background-color: var(--color-fade);
+    color:var(--color-blue)
+}*/
+
+.coinChartCon .mobileAbout,.coinChartCon .mobileMarketStat{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 750px) {
+
+    .coinChartCon {
+        border:none;
+    }
+
+    .timeline .coinChartCon {
+        padding: 10px;
+        
+    }
+    .coinChartCon .buttonCon{
+        background-color: var(--color-background);
+        position: absolute;
+        bottom:0px;
+        left:0px;
+        right:0px
+        
+    }
+
+    .coinChartCon .mobileAbout{
+        border-bottom: 1px solid var(--color-fader);
+
+    }
+
+    .coinChartCon .mobileAbout,.coinChartCon .mobileMarketStat{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+

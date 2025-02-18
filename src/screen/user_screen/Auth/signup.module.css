@@ -1,0 +1,277 @@
+.signupNavigation {
+  height: 70px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2%;
+  padding-left: 2%;
+
+}
+
+.signupNavigation span{
+  font-size:2rem
+}
+
+.navigationLeft{
+  flex:1;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.navigationRight{
+  flex:1;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.navigationRight button{
+  padding-top:12px;
+  padding-bottom:12px;
+  background-color:var(--color-blue);
+  width:100px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color:var(--color-fade)
+}
+
+/*form section */
+.form_screen {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+.right_container {
+  width: 60%;
+}
+
+.form_outercontainer {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.form_container {
+  width: 80%;
+}
+
+.form_container .info_section{
+  margin-bottom: 30px;
+  display: none;
+
+}
+.form_container .info_left{
+  width:60%
+}
+
+.form_container .info_left h2{
+  font-size: 1.3rem;
+
+}
+
+.form_container .info_left p{
+  font-size: 1rem;
+  color:var(--fadeText);
+
+}
+
+.form_container .info_right {
+  width:40%
+}
+
+.form_container .info_right img{
+  width:120%;
+}
+
+
+.form_container .requiredText{
+  font-size: 1.1rem;
+  color:var(--headColor);
+
+}
+
+/* styling the right section */
+.form_container .heading{
+  font-size: 2.6rem;
+  color:var(--headColor);
+  margin-bottom: 30px;
+}
+
+/* styling the form right section */
+
+.right_section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.right_section .rightinfo_left,.right_section .rightinfo_right{
+  width:100%
+}
+
+.right_section .rightinfo_left .heading{
+   font-size:3rem;
+   text-align: center;
+   font-weight: 700;
+}
+
+.right_section .rightinfo_left p{
+  font-size: 1rem;
+  color:var(--fadeText);
+  text-align: center;
+  
+}
+
+.right_section .rightinfo_right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.right_section .rightinfo_right img{
+  width:100%
+}
+
+/* styling the policy section */
+
+.policy_container{
+  display:flex;
+  padding-top: 30px;
+}
+
+.policy_container .policy_left{
+  width:10%;
+
+}
+
+.policy_container .policy_right{
+  width:90%
+
+}
+
+.policy_container .policy_right p{
+  font-size: 1rem;
+  color:var(--headColor);
+
+}
+
+
+.policy_container input{
+  width:20px;
+  height:20px;
+  border:1px solid var(--fadeText);
+}
+
+/*  the input container */
+
+.form_container .inputContainer{
+  display: flex;
+  gap:4%
+}
+.form_container .inputLeft{
+  width:48%;
+
+
+}
+
+.form_container .inputRight{
+  width:48%
+
+}
+
+
+
+@media screen and (max-width: 1020px) {
+  .signupNavigation {
+    border-bottom:0cap;
+  }
+
+  /*form section */
+  .form_screen {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .right_section {
+    width: 100%;
+    display: none;
+  }
+  .right_container {
+    width: 40%;
+  
+  }
+  .form_outercontainer {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+  }
+  .form_container {
+    width: 40%;
+  }
+  .form_container .info_section{
+    margin-bottom: 30px;
+    display: flex;
+  
+  }
+
+  /*  the input container */
+
+.form_container .inputContainer{
+  display: flex;
+  flex-direction: column;
+}
+.form_container .inputLeft{
+  width:100%;
+}
+
+.form_container .inputRight{
+  width:100%
+}
+  
+
+
+
+}
+
+
+@media screen and (max-width:900px) {
+
+  /*form section */
+ 
+
+
+  
+
+
+  .form_container {
+    width: 60%;
+  }
+  
+
+
+
+}
+
+@media screen and (max-width: 720px) {
+
+  /*form section */
+ 
+
+
+ 
+
+  .form_container {
+    width: 80%;
+  }
+  
+
+
+
+}

@@ -1,0 +1,807 @@
+.dashboard {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 3000;
+}
+
+/* styling he sidebar */
+.dashboard .sidebar {
+    width: 18%;
+}
+
+
+
+/* styling the main section */
+.dashboard .main {
+    width: 82%;
+    height: 100vh;
+    position: relative;
+    overflow-x:scroll
+}
+
+
+
+/* styling the tab container*/
+
+.main .tabCont {
+    height: 11vh;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    z-index: 100;
+    background-color: var(--background-color);
+    display: none
+}
+
+.main .desktopFooterCont {
+    height: 11vh;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    z-index: 100;
+    background-color: var(--background-color);
+
+}
+
+/* styling the homesccreen*/
+
+.dashboard .homeScreen {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    overflow-y: scroll;
+    border-bottom: none;
+    height: 80vh;
+}
+
+.dashboard .homeScreen .timeline {
+    width: 65%;
+
+    height: 100%;
+    overflow-y: scroll;
+    padding-bottom: 30px
+}
+
+.dashboard .homeScreen .rightBar {
+    width: 35%;
+    border: 1px solid var(--color-fade);
+
+}
+
+.dashboard .homeScreen .box {
+    border-bottom: 1px solid var(--color-fade);
+    padding: 24px;
+
+}
+
+/*styling the autocomplete box section*/
+.dashboard .homeScreen .authComplete {
+    border-bottom: 1px solid var(--color-fade);
+    padding: 3px;
+
+}
+
+.dashboard .homeScreen .authComplete .welcomeText {
+    font-size: 1rem;
+    color: var(--fadeText);
+    margin-bottom: 40px;
+}
+
+.dashboard .homeScreen .authComplete .account {
+    display: flex;
+    padding-bottom: 10px;
+
+}
+
+.homeScreen .authComplete .textDiv {
+    width: 50%
+}
+
+.homeScreen .authComplete .textDiv p {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+
+}
+
+.homeScreen .authComplete .textDiv span {
+    padding: 2px;
+    border-radius: 100%;
+    background-color: var(--color-blue);
+    margin-right: 10px;
+    color: var(--color-background)
+}
+
+.homeScreen .authComplete .progressCon {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.homeScreen .authComplete .progress {
+    width: 100%;
+    background-color: var(--color-fade);
+    height: 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex
+}
+
+.homeScreen .authComplete .progressInner {
+    width: 60%;
+    background-color: var(--color-blue);
+    height: 15px;
+    border-radius: 10px;
+
+}
+
+.homeScreen .authComplete .progressText {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/*styling the paymentcomplete box section*/
+.dashboard .homeScreen .paymentComplete {
+    border-bottom: 1px solid var(--color-fade);
+    padding: 3px;
+    padding-bottom: 30px;
+    padding-top:30px
+}
+
+.dashboard .homeScreen .paymentComplete .paymentHeading {
+    margin-bottom: 10px;
+
+
+}
+
+.dashboard .homeScreen .paymentComplete .paymentText {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--fadeText);
+    margin-bottom: 50px;
+
+}
+
+.dashboard .homeScreen .paymentComplete .stepContainer {
+    display: flex;
+}
+
+.dashboard .homeScreen .paymentComplete .steps {
+    width: 60%
+}
+
+.dashboard .homeScreen .paymentComplete .eachstepText {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--fadeText);
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dashboard .homeScreen .paymentComplete .eachstepText span {
+    padding: 2.3px;
+    border-radius: 100%;
+    background-color: rgb(71, 128, 71);
+    color: var(--color-background);
+    font-size: 1.3rem;
+    margin-right: 15px;
+}
+
+.dashboard .homeScreen .paymentComplete .eachstepDiv {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.dashboard .homeScreen .paymentComplete .eachstepDiv .iconCon {
+    margin-right: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.paymentComplete .eachstepDiv span {
+    font-size: 2rem
+}
+
+
+.dashboard .homeScreen .paymentComplete .eachstepDiv .textCon p {
+    font-size: 1.2rem;
+    font-weight: 600;
+
+
+}
+
+.dashboard .homeScreen .paymentComplete .eachstepDiv .textCon p:nth-of-type(2) {
+    color: var(--fadeText);
+    margin-bottom: 15px;
+
+
+}
+
+.dashboard .homeScreen .paymentComplete .eachstepDiv .textCon p:nth-of-type(3) {
+    color: var(--color-blue);
+    font-weight: 400;
+}
+
+
+
+.dashboard .homeScreen .paymentComplete .action {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard .homeScreen .paymentComplete .action button {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 30px;
+    background-color: var(--color-blue);
+    color: var(--background-color);
+    font-size: 1.2rem;
+    font-family: Poppins;
+    font-weight: 600;
+
+}
+
+/* styling the faq question */
+.dashboard .homeScreen .faq {
+    padding: 3px;
+    padding-bottom: 30px;
+    padding-top:30px;
+    border-bottom: 1px solid var(--color-fade);
+}
+
+.dashboard .homeScreen .faq h1 {
+    margin-bottom: 10px;
+}
+
+.dashboard .homeScreen .faqBox {
+    border: 1px solid var(--color-fade);
+    width: 100%;
+    padding: 15px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard .homeScreen .faqBox:hover {
+    background-color: var(--color-fade);
+    transition: 1s ease;
+}
+
+/* timeline section*/
+.dashboard .homeScreen .timelineCon {
+    padding: 3px;
+    padding-bottom: 30px;
+    padding-top:30px
+}
+
+
+
+/*  */
+.dashboard .homeScreen .rightBar {
+    overflow-y: scroll;
+}
+
+
+.dashboard .homeScreen .rightBar .news {
+    padding: 30px;
+    border-bottom: 1px solid var(--color-fade);
+}
+
+.dashboard .homeScreen .rightBar .news .iconCon {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.dashboard .homeScreen .rightBar .news .iconCon .arrowCon {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard .homeScreen .rightBar .news .iconCon span {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard .homeScreen .rightBar .news .iconCon span:hover {
+
+    background-color: var(--color-fade);
+    transition: 1s ease;
+
+}
+
+.dashboard .homeScreen .rightBar .news .iconCon .cancelCon {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.dashboard .homeScreen .rightBar .news .infoCon {
+    display: flex;
+    padding: 10px
+}
+
+.dashboard .homeScreen .rightBar .news .infoTextCon {
+    width: 60%
+}
+
+.dashboard .homeScreen .rightBar .news .infoImgCon {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.dashboard .homeScreen .rightBar .news .infoImgCon img {
+    width: 80%
+}
+
+.dashboard .homeScreen .rightBar .news .infoCon .head {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.dashboard .homeScreen .rightBar .news .infoCon .text {
+    font-size: 1rem;
+    color: var(--fadeText);
+    margin-bottom: 10px;
+
+}
+
+.dashboard .homeScreen .rightBar .news .infoCon .actionText {
+    font-size: 1.1rem;
+    color: var(--color-blue);
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+
+
+}
+
+/*styling the top movers section*/
+.dashboard .homeScreen .rightBar .topMovers {
+    padding: 25px
+}
+
+.dashboard .homeScreen .rightBar .topMovers .headContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 14px
+}
+
+.dashboard .homeScreen .rightBar .topMovers .headContainer p {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.dashboard .homeScreen .rightBar .topMovers .headContainer p:nth-of-type(2) {
+    font-size: 1.1rem;
+    color: var(--color-blue)
+}
+
+/* styling the coincard */
+.dashboard .homeScreen .rightBar .topMovers .coinCard {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.dashboard .homeScreen .rightBar .topMovers .coinCard:hover {
+    background-color: var(--color-fade);
+    transition: 2s ease;
+
+}
+
+
+
+.dashboard .homeScreen .rightBar .topMovers .coinCard .symbolCon {
+    display: flex;
+    width: 40%;
+}
+
+.dashboard .homeScreen .rightBar .topMovers .coinCard .nameCon {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.dashboard .homeScreen .rightBar .topMovers .coinCard .nameCon .name {
+    font-size: 1.3rem;
+    font-weight: 600
+}
+
+.dashboard .homeScreen .rightBar .topMovers .coinCard .nameCon .symbol {
+    font-size: 1.3rem;
+}
+
+
+.dashboard .homeScreen .rightBar .topMovers .coinCard .symbolCon .imageCon {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.dashboard .homeScreen .rightBar .topMovers .coinCard .symbolCon .imageCon img {
+    width: 80%
+}
+
+.dashboard .homeScreen .rightBar .topMovers .coinCard .priceCon {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+
+.dashboard .homeScreen .rightBar .topMovers .coinCard .priceCon .currentPrice {
+    font-size: 1.4rem;
+
+}
+
+.dashboard .homeScreen .rightBar .topMovers .coinCard .priceCon .percentageChange {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+/*  styling the timeline section */
+.dashboard .homeScreen .timeline {
+    padding: 24px;
+}
+
+.dashboard .homeScreen .timeline h1 {
+    color: var(--fadeText);
+    margin-bottom: 20px;
+}
+
+
+/* Timeline card*/
+.dashboard .homeScreen .timeline .timelineCard {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--color-fade);
+    margin-bottom: 20px;
+}
+
+.dashboard .homeScreen .timeline .timelineCard .timelineImg{
+   
+    
+}
+
+.dashboard .homeScreen .timeline .timelineCard .timelineImg .heading{
+    display:flex;
+    margin-bottom: 20px;
+}
+
+.dashboard .homeScreen .timeline .timelineCard .timelineImg .heading .headingTextCon{
+    display:flex;
+    width:70%;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.dashboard .homeScreen .timeline .timelineCard .timelineImg .heading .headingTextCon span{
+    padding:3px;
+    background-color: var(--color-blue);
+    border-radius:100%;
+    font-size:1.4rem;
+    color:var(--color-background);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-right: 10px;
+
+
+}
+
+.dashboard .homeScreen .timeline .timelineCard .timelineImg .heading .headingTextCon .headingText{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dashboard .homeScreen .timeline .timelineCard .timelineImg .heading .headingTextCon .headingText p:nth-of-type(1){
+    font-size:1.5rem;
+    font-weight: 600;
+    
+}
+
+.dashboard .homeScreen .timeline .timelineCard .timelineImg .heading .headingTextCon .headingText p:nth-of-type(2){
+    font-size:1.2rem;
+    color:var(--fadeText)
+    
+}
+
+
+.dashboard .homeScreen .timeline .timelineCard .timelineImg .heading .headingIcon{
+    display:flex;
+    justify-content: flex-end;
+    width: 30%;
+    align-items: center;
+}
+.dashboard .homeScreen .timeline .timelineCard img{
+    width:100%;
+    height:auto
+}
+
+
+
+.dashboard .homeScreen .timeline .timelineCard .timelineAbout{
+    
+}
+
+.dashboard .homeScreen .timeline .timelineCard .timelineAbout .heading{
+    display:flex;
+    margin-bottom: 20px;
+    width:100%;
+    display:none
+}
+
+
+.dashboard .homeScreen .timeline .timelineCard .timelineAbout .heading .headingTextCon{
+    display:flex;
+    width:70%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.dashboard .homeScreen .timeline .timelineCard .timelineAbout .heading .headingTextCon span{
+    padding:2.8px;
+    background-color: var(--color-blue);
+    border-radius:100%;
+    font-size:1.4rem;
+    color:var(--color-background);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-right: 10px;
+
+
+}
+
+.dashboard .homeScreen .timeline .timelineCard .timelineAbout .heading .headingTextCon .headingText{
+    display:flex;
+    align-items: center;
+}
+
+.dashboard .homeScreen .timeline .timelineCard .timelineAbout .heading .headingTextCon .headingText p:nth-of-type(1){
+    font-size:1.5rem;
+    font-weight: 600;
+    margin-right: 10px;
+    
+}
+
+.dashboard .homeScreen .timeline .timelineCard .timelineAbout .heading .headingTextCon .headingText p:nth-of-type(2){
+    font-size:1.2rem;
+    color:var(--fadeText)
+    
+}
+
+
+.dashboard .homeScreen .timeline .timelineCard .timelineAbout .heading .headingIcon{
+    display:flex;
+    justify-content: flex-end;
+    width: 30%;
+    align-items: center;
+}
+
+.dashboard .homeScreen .timeline .timelineCard .timelineAbout .aboutHead{
+    color:black
+}
+
+.dashboard .homeScreen .timeline .timelineCard .timelineAbout .aboutText{
+    color:var(--fadeText);
+    font-size: 1.2rem;
+}
+
+.dashboard .homeScreen .timeline .timelineCard .timelineAbout .aboutIconContainer{
+    padding-top:20px;
+    padding-bottom:20px;
+    display:flex;
+    align-items: center;
+
+}
+.dashboard .homeScreen .timeline .timelineCard .timelineAbout .aboutIconContainer span:nth-of-type(1){
+    margin-right: 20px;
+}
+.dashboard .homeScreen .timeline .timelineCard .timelineAbout .aboutIconContainer p{
+    font-size:1.3rem;
+    margin-right: 20px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .dashboard .homeScreen .timeline {
+        width: 60%;
+    }
+
+    .dashboard .homeScreen .rightBar {
+        width: 40%;
+
+    }
+
+    .dashboard .homeScreen .authComplete .account {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .homeScreen .authComplete .progressCon {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .homeScreen .authComplete .textDiv {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+
+    .dashboard .homeScreen .paymentComplete .stepContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dashboard .homeScreen .paymentComplete .steps {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .dashboard .homeScreen .paymentComplete .action {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .sidebar .middleSection span {
+        display: none
+    }
+
+    .dashboard .sidebar {
+        width: 10%;
+        background-color: transparent;
+    }
+
+    .dashboard .main {
+        width: 100%;
+        padding:0px
+    }
+
+    /* styling the homesccreen*/
+    /*  styling the timeline section */
+.dashboard .homeScreen .timeline {
+    padding: 15px;
+}
+
+    /*styling the autocomplete box section*/
+    .dashboard .homeScreen .authComplete {
+        padding: 0px;
+        padding-bottom: 30px;
+        padding-top:30px
+
+    }
+    .dashboard .homeScreen .paymentComplete {
+        padding: 0px;
+        padding-bottom: 30px;
+        padding-top:30px
+    }
+    
+    /* styling the faq question */
+    .dashboard .homeScreen .faq {
+        padding: 0px;
+        padding-bottom: 30px;
+        padding-top:30px
+    }
+    
+    /* timeline section*/
+    .dashboard .homeScreen .timelineCon {
+        padding: 0px;
+        padding-bottom: 30px;
+        padding-top:30px
+    }
+    
+
+    .dashboard .homeScreen {
+        display: flex;
+    }
+
+    .dashboard .homeScreen .timeline {
+        width: 100%;
+
+    }
+
+    .dashboard .homeScreen .rightBar {
+        display: none
+    }
+
+
+
+    .dashboard .homeScreen .paymentComplete .steps {
+        width: 100%
+    }
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+
+    .dashboard .sidebar {
+        display: none
+    }
+
+
+    .mobilefooter {
+        display: flex;
+    }
+
+    /* styling the main section */
+    .dashboard .main {
+        width: 100%;
+        position: relative;
+    }
+
+    .main .tabCont {
+        display: block
+    }
+
+    .main .desktopFooterCont {
+        display: none
+    }
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 520px) {}

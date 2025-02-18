@@ -1,0 +1,80 @@
+.footer_section {
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.footer_section_inner {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+
+}
+
+.coinbase {
+  font-size: 2rem;
+  color: var(--color-blue)
+}
+.footer_category p{
+  width:100%
+}
+
+.footer_category{
+  width:25%;
+}
+
+.footer_section_inner h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  width:100%;
+  color:rgb(50,50,50)
+}
+.footer_section_inner .firstList {
+  background-color: transparent;
+  justify-content: flex-start;
+}
+
+
+.footer_section_inner p,
+.footer_section_inner li {
+  font-size: 1.1rem;
+  color: rgb(100, 100, 100);
+  font-family: poppins;
+  margin-bottom: 20px;
+
+}
+
+.footer_section_inner li {
+  background-color: rgb(245, 245, 245);
+  padding:12px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  
+}
+
+
+@media screen and (max-width: 850px) {
+  .footer_section_inner {
+    display: flex;
+    width: 87%;
+    flex-direction: column;
+
+  }
+
+  .footer_category {
+    margin-bottom: 40px;
+    width:100%
+  }
+
+
+
+  /* styling the footer size */
+
+
+
+}

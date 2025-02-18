@@ -1,0 +1,103 @@
+.formContainer{
+    width: 100%;
+    overflow-y: scroll;
+    padding: 30px 10px 40px 10px;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-fader);
+    border-radius: 5px;
+    display: flex;
+    margin-top:50px;
+}
+
+.formHead {
+    width: 100%;
+    margin-right: 30px;
+}
+
+.phoneCon{
+    display:flex;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.phoneCon span{
+    margin-right: 20px;
+    font-size:2rem
+}
+.phoneCon p{
+    font-size:1.5rem
+}
+
+
+.buttonCon {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.buttonCon button {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    background-color: var(--color-fade);
+    font-family: Poppins;
+}
+/* styling the input section */
+.inputCon{
+    
+}
+.inputCon label{
+    font-size:1.5rem;
+}
+
+.inputCon input{
+    width:90%;
+    height:55px;
+    border-radius:10px;
+    background-color: var(--color-fade);
+    margin-bottom:20px;
+    padding:15px;
+    font-size:1rem
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .walletFormContainer .formHead {
+        width: 40%;
+        margin-right: 0px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .formContainer{
+        padding: 30px 10px 50px 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 750px) {
+
+    .formContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top:0px;
+    }
+
+    .formHead {
+        width: 100%
+    }
+
+   
+  
+}

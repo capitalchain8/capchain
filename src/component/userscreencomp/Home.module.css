@@ -1,0 +1,548 @@
+/* styling the homesccreen*/
+.homeScreen {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    overflow-y: scroll;
+    border-bottom: none;
+    height: 80vh;
+}
+
+.homeScreen .timeline {
+    width: 80%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-bottom: 30px;
+    background-color: var(--color-background);
+    padding: 24px;
+    position: relative;
+}
+
+
+.homeScreen .rightBar {
+    width: 20%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+
+/* styling the asset screen*/
+.assetScreen {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    border-bottom: none;
+    height: 85vh;
+    background-color: var(--color-light-fade);
+    overflow-y: scroll;
+}
+
+.assetScreen .timeline {
+    width: 65%;
+    padding: 24px;
+    overflow-y: scroll;
+}
+
+.assetScreen .rightBars {
+    width: 35%;
+    border: 1px solid var(--color-fade);
+    padding: 24px;
+}
+
+
+/*  */
+.assetScreen .rightBars {
+    overflow-y: scroll;
+}
+
+
+.assetScreen .rightBars {
+    width: 35%;
+    border: 1px solid var(--color-fade);
+    padding: 24px;
+
+}
+
+.assetScreen .reoccuringMobile {
+    display: none;
+
+}
+
+/* styling the tradesccreen*/
+.tradeScreen {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    overflow-y: scroll;
+    border-bottom: none;
+    height: 80vh;
+    background-color: var(--color-light-fade);
+    overflow-x: scroll;
+    width: 100%
+}
+
+.tradeScreen .timeline {
+    width: 80vw;
+    height: 100%;
+    overflow-y: scroll;
+    padding-bottom: 30px;
+    padding: 10px;
+    overflow-x: scroll;
+}
+
+.tradeScreen .rightBar {
+    width: 20vw;
+    overflow-x: scroll;
+    padding: 10px;
+    padding-bottom: 100px;
+}
+
+/* styling the pay section */
+
+
+/* styling the tradesccreen*/
+.payScreen,
+.calculatorScreen {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    overflow-y: scroll;
+    border-bottom: none;
+    height: 80vh;
+    background-color: var(--color-light-fade);
+    overflow-x: scroll;
+    width: 100%
+}
+
+.payScreen .pay,
+.calculatorScreen .pay,
+.formScreen .timeline,.UpdateformScreen {
+    width: 50vw;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 10px;
+    overflow-x: scroll;
+}
+
+/*styling the right bar section*/
+.payScreen .rightBar,
+.calculatorScreen .rightBar,
+.formScreen .rightBar,.UpdateformScreen {
+    width: 40vw;
+    overflow-x: scroll;
+    padding: 10px;
+}
+
+.calculatorScreen .rightBar {
+    padding-bottom: 0px;
+
+}
+
+/*  styling chart screen*/
+.chartScreen {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 82vh;
+    width: 100%;
+    background-color: var(--color-light-fade);
+    position: relative;
+}
+
+.chartScreen .timeline {
+    width: 55vw;
+    padding-bottom: 30px;
+    padding: 10px;
+    height: 100%;
+    overflow-y: scroll;
+
+}
+
+
+.chartScreen .rightBar {
+    width: 45vw;
+    overflow-x: scroll;
+    padding: 10px;
+    padding-bottom: 100px;
+}
+
+/* styling the available assets section */
+
+.availableAssetScreen {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    overflow-y: scroll;
+    border-bottom: none;
+    height: 90vh;
+    background-color: var(--color-light-fade);
+    overflow-x: scroll;
+    width: 100%
+}
+
+.availableAssetScreen .timeline {
+    width: 80vw;
+    height: 100%;
+    overflow-y: scroll;
+    padding-bottom: 30px;
+    padding: 10px;
+    overflow-x: scroll;
+}
+
+/* styling the tradesccreen*/
+.sendScreen,
+.formScreen,
+.earnScreen,.notificationScreen,.inviteScreen,.profileSettingScreen,.UpdateformScreen,.taxScreen {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    overflow-y: scroll;
+    border-bottom: none;
+    height: 80vh;
+    background-color: var(--color-light-fade);
+    width: 100%
+}
+.inviteScreen{
+    background-color: var(--color-background);
+}
+
+.sendScreen .pay,.earnScreen .pay,.notificationScreen .pay,.inviteScreen .pay,.profileSettingScreen .pay {
+    width: 40vw;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 10px;
+    overflow-x: scroll;
+}
+
+/*styling the right bar section*/
+.sendScreen .rightBar,.earnScreen .rightBar {
+    width: 50vw;
+    overflow-x: scroll;
+    padding: 10px;
+    padding-bottom: 100px;
+}
+
+.sendScreen .pay{
+    width:50vw
+}
+
+.sendScreen .rightBar{
+    width:50vw
+
+}
+
+
+
+/* styling the calculator screen */
+
+
+
+.calculatorScreen .pay {
+    width: 40vw;
+}
+
+.calculatorScreen .rightBar {
+    width: 50vw;
+}
+
+/*  styling the  form timeline screen */
+.formScreen,.UpdateformScreen{
+    justify-content: center;
+}
+
+.formScreen .timeline {
+    width: 80vw;
+
+}
+
+.formScreen .rightBar {
+    display: none
+}
+
+.UpdateformScreen .timeline{
+    width:40vw
+
+}
+
+/* styling the earn screen*/
+.earnScreen .pay,.inviteScreen .pay,.profileSettingScreen .pay {
+    width: 50vw;
+}
+
+.earnScreen .rightBar,.inviteScreen .rightBar,.profileSettingScreen .rightBar {
+    width: 50vw;
+}
+
+.notificationScreen .pay,.profileSettingScreen .pay{
+    width:50vw
+}
+.profileSettingScreen .rightBar{
+    width:20vw
+}
+.taxScreen{
+    padding-top:30px
+}
+.taxScreen .pay{
+    width:35vw
+}
+.taxScreen .rightBar{
+    width:30vw;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .homeScreen .rightBar {
+        display: none;
+
+    }
+
+    .homeScreen .timeline {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* styling the asset screen*/
+
+    .assetScreen .timeline {
+        width: 80%;
+        padding: 10px;
+    }
+
+
+
+    .assetScreen .rightBars {
+        display: none;
+
+    }
+
+
+    .assetScreen .rightBars {
+        width: 35%;
+        border: 1px solid var(--color-fade);
+        padding: 24px;
+
+    }
+
+    .assetScreen .reoccuringMobile {
+        display: none;
+
+    }
+
+    /*  styling chart screen*/
+    .chartScreen .timeline,
+    .chartScreen .rightBar {
+        display: block
+    }
+
+    
+
+   
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+
+    .homeScreen {
+        display: flex;
+    }
+
+    .homeScreen .timeline {
+        width: 100%;
+        padding: 15px;
+
+    }
+
+    .rightBar {
+        display: none
+    }
+
+    /* styling the asset screen */
+    .assetScreen {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        height: 100%;
+    }
+
+    .assetScreen .timeline {
+        padding-top: 18px;
+        padding-right: 18px;
+        padding-left: 18px;
+        width: 100%;
+        padding-bottom: 200px;
+    }
+
+    /*styling tradescreen*/
+
+    .tradeScreen {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        overflow-y: scroll;
+        border-bottom: none;
+        height: 80vh;
+        background-color: var(--color-light-fade);
+    }
+
+    .tradeScreen .timeline {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        padding-bottom: 30px;
+        padding: 24px;
+    }
+
+    /* styling the pay section */
+    /* styling the tradesccreen*/
+    .calculatorScreen,
+    .formScreen,.UpdateformScreen .timeline {
+        height: 90vh;
+    }
+    
+
+    /*  styling the timeline screen */
+
+    .payScreen .pay,
+    .sendScreen .pay,
+    .calculatorScreen .pay,
+    .formScreen .timeline,.earnScreen .pay,.notificationScreen .pay,.inviteScreen .pay,.profileSettingScreen .pay{
+        width: 100vw;
+        height: 100%;
+        overflow-y: scroll;
+        padding-top: 0px;
+        overflow-x: scroll;
+    }
+    
+    .UpdateformScreen .timeline {
+        width:60%
+    }
+
+    .sendScreen .pay,
+    .formScreen .rightBar {
+        position: relative
+    }
+
+     /* styling the earn screen*/
+    
+    .earnScreen .rightBar,.inviteScreen .rightBar {
+        display:none
+    }
+
+    .earnScreen .pay,.profileSettingScreen .pay{
+        padding-top:20px
+    }
+    /* tax screen */
+    .taxScreen .pay{
+        width:60vw
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    /* styling the asset screen section*/
+    .assetScreen .reoccuringMobile {
+        display: block;
+
+    }
+
+    .assetScreen .reoccuringDesktop {
+        display: none;
+
+    }
+    .assetScreen .timeline{
+        padding:8px;
+        padding-right:10px;
+        padding-left:10px;
+        padding-bottom: 100px;
+        padding-top:0px
+    }
+
+    .tradeScreen .timeline {
+        padding: 0px;
+    }
+
+    /* styling the pay section */
+    .payScreen .pay,
+    .calculatorScreen .pay,
+    .formScreen .timeline,.UpdateformScreen .timeline {
+        padding: 0px;
+    }
+
+    /*  styling chart screen*/
+    .chartScreen {
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+    }
+
+
+
+    .chartScreen .timeline {
+        width: 100vw;
+        overflow-y: scroll;
+        padding: 0px;
+        padding-bottom: 30px;
+        height: 100%
+    }
+
+    .chartScreen .rightBar,
+    .formScreen .rightBar {
+        display: none
+    }
+    .taxScreen .rightBar{
+        display:none
+    }
+
+    /* styling the available assets screen */
+    .availableAssetScreen .timeline {
+        padding: 0px;
+    }
+
+    .availableAssetScreen .timeline {
+        width: 100vw;
+        height: 100%;
+    }
+
+    /* styling the send section */
+    .sendScreen .pay {
+        padding: 0px;
+    }
+
+    .formScreen .timeline {
+        margin-right: 0px;
+
+    }
+    .UpdateformScreen{
+        background-color: var(--color-background);
+    }
+
+    .UpdateformScreen .timeline {
+        width:100%;
+    }
+    .taxScreen .pay{
+        width:100vw;
+        padding: 0px;
+        height: 100%;
+    }
+
+    .notificationScreen .pay{
+        padding:0px
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 520px) {}

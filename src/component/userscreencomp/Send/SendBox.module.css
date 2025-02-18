@@ -1,0 +1,112 @@
+.sendBox {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding:50px 10px 100px 10px;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-fader);
+    border-radius: 5px;
+    
+}
+
+.sendBox .imgCon{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+.sendBox .imgCon img{
+    width:45%
+
+}
+
+.sendBox .heading{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+.sendBox .heading h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.sendBox .contentCon{
+    margin-bottom: 40px;
+}
+
+.sendBox .contentCon .contentHead{
+    display:flex;
+    align-items: flex-start;
+}
+
+.sendBox .contentCon .contentHead span{
+    margin-right: 10px;
+}
+.sendBox .contentCon  h1{
+   font-size: 1.4rem;
+}
+
+.sendBox .contentCon p{
+    font-size:1.2rem;
+    color:var(--fadeText)
+}
+
+.sendBox .buttonCon{
+    width:100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--color-background);
+    
+}
+
+.sendBox button{
+    font-size:1.2rem;
+    width:98%;
+    padding-top:17px;
+    padding-bottom:17px;
+    background-color: var(--color-blue);
+    color:var(--color-background);
+    border-radius: 30px;
+    
+}
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .sendBox {
+        width: 100%;
+        border-radius: 0px;
+
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .sendBox .imgCon img{
+        width:50%
+    
+    }
+    .sendBox .buttonCon{
+        position: fixed;
+        width:100%;
+        bottom:0px;
+        display:flex;
+        left:0px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+
+   
+    
+
+}

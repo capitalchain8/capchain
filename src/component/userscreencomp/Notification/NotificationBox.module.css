@@ -1,0 +1,16 @@
+.notificationbox{
+    width: 100%;
+    overflow-y: scroll;
+    padding:20px 20px 100px 20px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 750px) {
+
+    /* styling the pay section*/
+    .notificationbox{
+        padding:0px;
+    }
+   
+}
+

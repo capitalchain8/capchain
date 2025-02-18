@@ -1,0 +1,55 @@
+.transaction {
+    display:flex;
+    padding-bottom: 20px;
+    padding-top:20px;
+    
+}
+.transaction .crypto {
+    width:70%;
+    display:flex;
+    
+}
+ .transaction .crypto .cryptoImgCon {
+    width:35px;
+    margin-right: 10px;
+}
+
+ .transaction .crypto .cryptoImgCon img{
+    width:30%;
+}
+
+ .transaction .crypto .cryptoContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    
+
+}
+ .transaction .crypto .cryptoContent h2 {
+    font-size: 1.3rem;
+    color: var(--fadeText);
+    font-weight: 300;
+
+}
+ .transaction .crypto .cryptoContent p {
+    font-size: 1rem;
+    text-align: start;
+
+}
+
+ .transaction .crypto .cryptoImgCon img{
+    width:100%;
+}
+ .transaction  button{
+    width:150px;
+    padding-top:18px;
+    padding-bottom: 18px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    color:var(--color-blue);
+    color: var(--fadeText);
+    background-color: var(--color-fade);
+    font-weight: 500;
+    border:1px solid rgb(230, 230, 230);
+}

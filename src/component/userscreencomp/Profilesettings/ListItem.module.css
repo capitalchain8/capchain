@@ -1,0 +1,17 @@
+.menulist{
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    margin-bottom: 30px;
+}
+
+.menulist p{
+    font-size:1.3rem;
+    color:var(--fadeText);
+}
+
+.menulist span{
+    font-size:2rem;
+    
+}

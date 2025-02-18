@@ -1,0 +1,72 @@
+/* styling the screen container */
+.screenContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.screenContainer .innerContainer {
+    width: 450px;
+    padding: 20px;
+    border:1px solid var(--color-fade);
+    border-radius: 10px;
+}
+
+.screenContainer .imageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screenContainer .imageContainer img {
+    width: 50%;
+
+}
+
+.screenContainer .verifyHead {
+    font-size: 2.6rem;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 20px
+}
+
+.screenContainer .verifyParagraph {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 550;
+    color:rgb(50,50,50)
+}
+
+.screenContainer .verifyParagraph span {
+    font-weight: 900
+}
+
+.screenContainer form {
+    margin-bottom: 30px;
+}
+
+.screenContainer .signout {
+    color: var(--color-blue);
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+
+
+
+@media screen and (max-width: 520px) {
+    .screenContainer .innerContainer {
+        width: 100%;
+        padding: 35px;
+        border: none;
+        border-radius: 20px;
+
+    }
+
+   
+
+}

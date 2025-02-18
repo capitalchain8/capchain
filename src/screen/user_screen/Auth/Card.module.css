@@ -1,0 +1,85 @@
+/* styling the screen container */
+.screenContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.screenContainer .innerContainer {
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--color-fade);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.screenContainer .imageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 80px;
+}
+
+.screenContainer .imageContainer img {
+    width: 45%;
+
+}
+
+.screenContainer .paragraphText {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 550;
+    color:var(--color-black);
+    margin-bottom: 100px;
+    width: 80%;
+    align-self: center;
+}
+
+.screenContainer .innerContainer  .skip,.screenContainer .innerContainer  .setup{
+    padding-top:15px;
+    padding-bottom: 15px;
+    align-self: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: Poppins;
+}
+
+.screenContainer .innerContainer  .setup{
+    width:150px;
+    background-color: var(--color-blue);
+    margin-bottom: 20px;
+    color: var(--background-color);
+
+}
+
+.screenContainer .innerContainer  .skip{
+    width:100px;
+    border: 1px solid var(--color-blue);
+    color:var(--color-blue);
+    background-color: transparent;
+}
+
+
+
+
+
+@media screen and (max-width: 520px) {
+    .screenContainer .innerContainer {
+        width: 98%;
+        padding: 35px;
+        border: none;
+        border-radius: 20px;
+
+    }
+
+   
+
+}

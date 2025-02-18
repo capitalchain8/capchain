@@ -1,0 +1,30 @@
+.privaciesContainer {
+    width: 100%;
+    overflow-y: scroll;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-fader);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+.privacyCard{
+    display:flex;
+    padding-top:10px;
+    padding-bottom:10px
+}
+
+.privacyCard p{
+    width:60%;
+    font-size:1.3rem;
+    color:var(--fadeText);
+    text-align:left
+}
+
+.privacyCard span{
+    width:40%;
+    font-size:2rem;
+    text-align:right
+}
+

@@ -1,0 +1,12 @@
+.imgCon{
+    display:flex;
+    justify-content: center;
+    padding-top:20px
+}
+
+.img{
+    width:80%
+}
+.img img{
+    width:350px
+}
